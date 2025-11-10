@@ -7,11 +7,11 @@ const ContactCard = (props) => {
 
     return (
         <div className="item">
-            <img 
+            {/* <img 
             className="ui avatar image" 
             src= {Logo} 
             alt="avatar" 
-            />
+            /> */}
         <div className="content">
           <div className="header">{name}</div>
           <div>{email}</div>

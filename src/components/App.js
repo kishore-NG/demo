@@ -8,10 +8,15 @@ function App() {
 
    const [Contacts, setContacts] = useState([]);
 
+   const addContactHandler = (contact) => {
+      console.log(contact);
+      setContacts([...Contacts, contact]);
+   }
+
   return (
     <div>
     <Header />
-    < AddContact />
+    < AddContact addContactHandler={addContactHandler}/>
     <ContactList contacts={Contacts} />
     </div>
    
